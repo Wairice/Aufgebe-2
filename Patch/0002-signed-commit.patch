@@ -1,0 +1,28 @@
+From f86fb0a9a1a8957271086a83dee990bafb105633 Mon Sep 17 00:00:00 2001
+From: Wairice <stasosipov09092004@gmail.com>
+Date: Fri, 27 Oct 2023 14:45:23 +0200
+Subject: [PATCH 2/2] signed commit
+
+---
+ calculator.cpp | 4 ++++
+ 1 file changed, 4 insertions(+)
+
+diff --git a/calculator.cpp b/calculator.cpp
+index b91afea..34f8d05 100644
+--- a/calculator.cpp
++++ b/calculator.cpp
+@@ -2,7 +2,11 @@
+ 
+ int Calculator::Add (double a, double b)
+ {
++<<<<<<< HEAD
+     return a + b;
++=======
++	return a + b + 0.5;
++>>>>>>> 4ad40a3 (fix truncation error)
+ }
+ 
+ int Calculator::Sub (double a, double b)
+-- 
+2.39.2
+
